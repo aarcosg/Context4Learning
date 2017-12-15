@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap>
+    <entry>
+        <key>is_context_recognition_on</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>is_still_context_reset_on</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>detection_interval_in_millis</key>
+        <value>180000</value>
+    </entry>
+    <entry>
+        <key>still_reset_interval_in_millis</key>
+        <value>7200000</value>
+    </entry>
+</defaultsMap>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<datastore-indexes autoGenerate="true">
+    <datastore-index kind="User" ancestor="false">
+        <property name="username" direction="asc" />
+        <property name="time" direction="desc" />
+        <property name="moodleServerName" direction="asc" />
+        <property name="moodleToken" direction="asc" />
+    </datastore-index>
+    <datastore-index kind="Device" ancestor="false">
+        <property name="user" direction="asc" />
+        <property name="deviceId" direction="asc" />
+        <property name="time" direction="desc" />
+    </datastore-index>
+    <datastore-index kind="Context" ancestor="false">
+        <property name="device" direction="asc" />
+        <property name="activity" direction="asc" />
+        <property name="location" direction="asc" />
+        <property name="time" direction="desc" />
+    </datastore-index>
+    <datastore-index kind="TimeRestriction" ancestor="false">
+        <property name="user" direction="asc" />
+        <property name="startTime" direction="asc" />
+    </datastore-index>
+    <datastore-index kind="Notification" ancestor="false">
+        <property name="context" direction="asc" />
+        <property name="time" direction="desc" />
+    </datastore-index>
+    <datastore-index kind="AuditEvent" ancestor="false">
+        <property name="user" direction="asc" />
+        <property name="activity" direction="asc" />
+        <property name="category" direction="asc" />
+        <property name="action" direction="asc" />
+        <property name="time" direction="desc" />
+    </datastore-index>
+</datastore-indexes>

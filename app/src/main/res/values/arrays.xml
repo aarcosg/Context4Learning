@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="weather_conditions">
+        <item>@string/weather_unknown</item>
+        <item>@string/weather_clear</item>
+        <item>@string/weather_cloudy</item>
+        <item>@string/weather_foggy</item>
+        <item>@string/weather_hazy</item>
+        <item>@string/weather_icy</item>
+        <item>@string/weather_rainy</item>
+        <item>@string/weather_snowy</item>
+        <item>@string/weather_stormy</item>
+        <item>@string/weather_windy</item>
+    </string-array>
+</resources>

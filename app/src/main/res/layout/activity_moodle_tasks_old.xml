@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<es.us.context4learning.ui.CustomSwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipe_refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">-->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_actionbar_big"/>
+
+    <include layout="@layout/progress_bar"/>
+
+    <RelativeLayout
+        android:id="@+id/tasks_done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/tasks_done_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="fitXY"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/wide_space"
+            android:src="@drawable/ic_assignment_turned_in_grey600_48dp"/>
+
+        <TextView
+            android:id="@+id/tasks_done_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tasks_done_image"
+            android:layout_centerHorizontal="true"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:text="@string/pending_tasks_done"/>
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/swipe_refresh">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view_tasks"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <!--<it.gmariotti.cardslib.library.recyclerview.view.CardRecyclerView-->
+        <!--xmlns:card="http://schemas.android.com/apk/res-auto"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--card:list_card_layout_resourceID="@layout/native_recyclerview_card_layout"-->
+        <!--android:id="@+id/recycler_view_tasks"/>-->
+
+
+</LinearLayout>
+<!--</es.us.context4learning.ui.CustomSwipeRefreshLayout>-->

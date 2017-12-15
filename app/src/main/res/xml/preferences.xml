@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="@string/notifications">
+
+        <SwitchPreference
+            android:key="receive_notifications"
+            android:title="@string/title_pref_receive_notifications"
+            android:persistent="true"
+            android:summaryOn="@string/receive_notifications_on"
+            android:summaryOff="@string/receive_notifications_off"
+            android:defaultValue="true"/>
+
+        <Preference
+            android:key="time_restrictions"
+            android:title="@string/title_pref_time_restrictions"
+            android:selectable="true"
+            android:summary="@string/summary_pref_time_restrictions"/>
+
+        <Preference
+            android:key="location_restrictions"
+            android:title="@string/title_pref_location_restrictions"
+            android:selectable="true"
+            android:summary="@string/summary_pref_location_restrictions"/>
+
+        <Preference
+            android:key="limit_notifications_restrictions"
+            android:title="@string/title_pref_limit_notifications_restrictions"
+            android:selectable="true"
+            android:summary="@string/summary_pref_limit_notifications_restrictions"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/application">
+
+        <SwitchPreference
+            android:key="show_video_wifi"
+            android:title="@string/title_pref_show_video_wifi"
+            android:persistent="true"
+            android:summaryOn="@string/show_video_wifi_on"
+            android:summaryOff="@string/show_video_wifi_off"/>
+
+        <Preference
+            android:key="app_version"
+            android:title="@string/title_pref_version"
+            android:selectable="false"
+            android:summary=""/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

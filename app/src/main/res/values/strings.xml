@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Context4Learning</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="context">Context:</string>
+    <string name="title_login_activity">Login</string>
+    <string name="prompt_user">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_user">This user is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="error_user_taken">Username already in use</string>
+
+    <string name="in_vehicle">In a vehicle</string>
+    <string name="on_bicycle">On a bicycle</string>
+    <string name="on_foot">On foot</string>
+    <string name="running">Running</string>
+    <string name="still">Still</string>
+    <string name="tilting">Tilting</string>
+    <string name="unknown">Unknown activity</string>
+    <string name="walking">Walking</string>
+    <string name="other">Other</string>
+    
+    <string name="weather_clear" translatable="false">Clear</string>
+    <string name="weather_cloudy" translatable="false">Cloudy</string>
+    <string name="weather_foggy" translatable="false">Foggy</string>
+    <string name="weather_hazy" translatable="false">Hazy</string>
+    <string name="weather_icy" translatable="false">Icy</string>
+    <string name="weather_rainy" translatable="false">Rainy</string>
+    <string name="weather_snowy" translatable="false">Snowy</string>
+    <string name="weather_stormy" translatable="false">Stormy</string>
+    <string name="weather_windy" translatable="false">Windy</string>
+    <string name="weather_unknown" translatable="false">Unknown</string>
+
+    <string name="detected_activities_title">Detected Activities</string>
+    <string name="request_activity_updates">Request updates</string>
+    <string name="remove_activity_updates">Remove updates</string>
+    <string name="activity_updates_added">Activity updates added</string>
+    <string name="activity_updates_removed">Activity updates removed</string>
+
+    <string name="not_connected">GoogleApiClient not yet connected. Try again.</string>
+
+    <string name="unfinished_pending_tasks">You have unfinished pending tasks</string>
+    <string name="pending_tasks">Pending tasks</string>
+    <string name="tasks">Tasks</string>
+    <string name="moodle_notification_title">Moodle notification</string>
+
+    <string name="time_restriction">Time</string>
+    <string name="location_restriction">Location</string>
+
+    <string name="title_restriction_activity">Restrictions</string>
+    <string name="action_restrictions">Restrictions</string>
+    <string name="add_restriction">Add restriction</string>
+    <string name="title_time_restriction_activity">Time Restrictions</string>
+    <string name="title_location_restriction_activity">Location Restrictions</string>
+
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="error_invalid_time">Start time can not be greater than end time</string>
+
+    <string name="delete">Delete</string>
+    <string name="ask_delete_restriction">Do you want to delete that restriction?</string>
+    <string name="restriction_deleted">Restriction deleted</string>
+    <string name="empty_restrictions">Restrictions not set</string>
+    <string name="service_not_available">Service not available</string>
+    <string name="error_invalid_lat_long">Invalid latitude or longitude used</string>
+    <string name="no_address_found">No address found</string>
+    <string name="no_geocoder_available">No geocoder available</string>
+    <string name="address_found">Address found</string>
+    <string name="no_location_data_provided">No location data provided</string>
+
+    <string name="title_map_activity">Select location</string>
+    <string name="error_getting_maps">Map can not be displayed. Try again later.</string>
+    <string name="done">Done</string>
+    <string name="location_restriction_description">I don\'t want to receive notifications in these places</string>
+    <string name="time_restriction_description">I don\'t want to receive notifications at these hours</string>
+    <string name="dont_receive_notifications">I don\'t want to receive notifications</string>
+    <string name="title_moodle_tasks_activity">Tasks</string>
+    <string name="title_moodle_courses_activity">Courses</string>
+    <string name="title_web_activity">Moodle</string>
+    <string name="x_minutes">%1$d min</string>
+    <string name="pending_tasks_current_context">You are %1$s, these are the most appropriate tasks</string>
+    <string name="pending_tasks_other_context">These are the most appropriate tasks</string>
+    <string name="pending_tasks_done">Tasks done</string>
+    <string name="completed_tasks_done">You haven\'t completed any task</string>
+    <string name="hour_1">1 hour</string>
+    <string name="day_1">1 day</string>
+    <string name="day_1_here">1 day here</string>
+    <string name="moodle" translatable="false">Moodle</string>
+    <string name="my_courses">My courses</string>
+    <string name="limit_notifications">Limit notifications</string>
+    <string name="title_limit_notifications_activity">Limit notifications</string>
+    <string name="morning">In the morning:</string>
+    <string name="morning_hours" translatable="false">7:00 - 15:00</string>
+    <string name="evening">In the evening:</string>
+    <string name="evening_hours" translatable="false">15:00 - 23:00</string>
+    <string name="night">At night:</string>
+    <string name="night_hours" translatable="false">23:00 - 7:00</string>
+    <string name="refresh">Refresh</string>
+    <string name="progress">Progress</string>
+    <string name="title_student_progress_activity">Progress</string>
+    <string name="limits_updated">Limits updated</string>
+    <string name="messages">Messages</string>
+    <string name="marks">Marks</string>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="save">Save</string>
+
+    <string-array name="tasks_spinner_nav">
+        <item>Pending tasks</item>
+        <item>Completed tasks</item>
+    </string-array>
+    
+    <string name="exception_message_generic">There was an application error. Try again later</string>
+    <string name="exception_message_no_connection">There is no internet connection</string>
+    <string name="exception_message_device_not_found_gae">Error: Device not found. Check Internet connection or try again later.</string>
+    <string name="exception_message_user_not_found_gae">Error: User not found. Check Internet connection or try again later.</string>
+    <string name="app_permissions_required">Permissions required</string>
+    <string name="app_permissions_rationale">Context4Learning needs Access Fine Location permission in order to run properly</string>
+    <string name="exception_message_permissions_denied">Context4Learning needs requested permissions to run properly</string>
+    <string name="retry">Retry</string>
+    <string name="settings">Settings</string>
+    <string name="participants">Participants</string>
+    <string name="contents">Contents</string>
+    <string name="notifications">Notifications</string>
+    <string name="title_pref_receive_notifications">Receive notifications</string>
+    <string name="receive_notifications_on">You will receive any kind of notifications.</string>
+    <string name="receive_notifications_off">You will not receive any notifications.</string>
+    <string name="title_pref_time_restrictions">Time restrictions</string>
+    <string name="summary_pref_time_restrictions">Set time intervals which you will not receive any notifications.</string>
+    <string name="title_pref_location_restrictions">Location restrictions</string>
+    <string name="summary_pref_location_restrictions">Set locations which you will not receive any notifications.</string>
+    <string name="title_pref_limit_notifications_restrictions">Notifications limit</string>
+    <string name="summary_pref_limit_notifications_restrictions">Set the number of notifications that you are willing to receive throughout your day.</string>
+    <string name="application">Application</string>
+    <string name="title_pref_show_video_wifi">Limit videos to Wi-Fi only</string>
+    <string name="show_video_wifi_on">The app will only recommend video tasks when your mobile is connected to the Internet with Wi-Fi.</string>
+    <string name="show_video_wifi_off">The app will recommend video tasks when your mobile is connected to the Internet with Wi-Fi or mobile data.</string>
+    <string name="title_pref_version">Version</string>
+    <string name="title_settings_activity">Settings</string>
+    <string name="error_starttime_gt_endtime">Start time can not be greater than end time</string>
+    <string name="error_restriction_not_added">Restriction not added. Try again later.</string>
+    <string name="error_moodle_tasks_not_loaded">Tasks could not be loaded</string>
+    <string name="error_moodle_courses_not_loaded">Courses could not be loaded</string>
+    <string name="notifications_muted_1_hour">You will not receive any notifications in the next hour</string>
+    <string name="notifications_muted_1_day">You will not receive any notifications in the next 24 hours</string>
+    <string name="notifications_muted_1_day_location">You will not receive any notifications in the next 24 hours at your current location</string>
+    <string name="context_recognition_enabled">Context recognition enabled</string>
+    <string name="context_recognition_disabled">Context recognition disabled</string>
+    <string name="error_restrictions_not_loaded">Restrictions could not be loaded</string>
+    <string name="exception_message_restriction_not_found">Restriction not found</string>
+    <string name="exception_message_notification_limits_not_found">Notification limits not found</string>
+    <string name="error_limits_not_loaded">Notification limits could not be loaded</string>
+    <string name="error_google_api_client_network_lost">Error: Connection with Google Api Client was lost</string>
+    <string name="error_google_api_client_service_disconnected">Error: Google Api Client service has been killed</string>
+    <string name="error_google_api_client_connection">Error connecting to Google Api Client</string>
+    <string name="student_progress_report">Progress Report</string>
+    <string name="course_info">Course Info</string>
+    <string name="exception_message_timeout">Failed to connect to Moddle</string>
+    <string name="title_reset_pass_activity">Update password</string>
+    <string name="action_save">Save</string>
+    <string name="action_save_pass">Save password</string>
+    <string name="reset_pass_desc">Your Moodle password has been changed. Please, provide it filling the following form.</string>
+    <string name="reset_pass_try_moodle_signin">If the Moodle password was not changed by yourself, try signing up to your Moodle account:</string>
+    <string name="current_user">Your user is %1$s</string>
+    <string name="error_pass_doesnt_match_moodle">Provided pass does not match with Moodle one</string>
+    <string name="go_to_moodle">Go to Moodle</string>
+
+</resources>

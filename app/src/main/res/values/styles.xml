@@ -1,0 +1,83 @@
+<resources>
+    <style name="AppTheme" parent="AppTheme.Base"/>
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="colorControlHighlight">@color/ripple</item>
+    </style>
+
+    <style name="ActionBarThemeOverlay" parent="">
+        <item name="android:textColorPrimary">#fff</item>
+        <item name="colorControlHighlight">#3fff</item>
+    </style>
+
+    <style name="ActionBarPopupThemeOverlay" parent="ThemeOverlay.AppCompat" />
+
+    <style name="ActionBar.TitleText" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="HeaderBar">
+        <!--<item name="android:background">?colorPrimary</item>-->
+        <item name="android:background">@color/primary</item>
+        <item name="elevation">@dimen/headerbar_elevation</item>
+    </style>
+
+    <style name="ToolbarDarkBGWhiteText" parent="Theme.AppCompat">
+        <item name="android:textColorPrimary">#fff</item>
+        <item name="actionMenuTextColor">#fff</item>
+        <item name="android:textColorSecondary">#fff5f5f5</item>
+    </style>
+
+    <style name="TimeRestrictionLabel" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">@color/secondary_text</item>
+        <item name="android:layout_marginRight">8dp</item>
+    </style>
+
+    <style name="TimeRestrictionValue" parent="TextAppearance.AppCompat.Large">
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="LocationRestrictionValue" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="CourseProgressBar" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxHeight">30dip</item>
+        <item name="android:max">100</item>
+        <item name="android:minWidth">120.0dip</item>
+        <item name="android:minHeight">25dip</item>
+        <item name="android:progressDrawable">@drawable/progressbar_course</item>
+    </style>
+
+    <style name="FabStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/fab_compat_margin</item>
+        <item name="android:layout_gravity">bottom|end</item>
+        <item name="borderWidth">0dp</item>
+        <item name="elevation">6dp</item>
+        <item name="pressedTranslationZ">12dp</item>
+        <item name="rippleColor">@color/ripple</item>
+    </style>
+
+    <!--<style name="Base.Widget.Design.TabLayout" parent="android:Widget">
+        <item name="tabIndicatorColor">?attr/colorAccent</item>
+        <item name="tabIndicatorHeight">2dp</item>
+        <item name="tabBackground">?attr/selectableItemBackground</item>
+        <item name="tabTextAppearance">@style/TextAppearance.Design.Tab</item>
+        <item name="tabSelectedTextColor">?android:textColorPrimary</item>
+    </style>-->
+
+</resources>

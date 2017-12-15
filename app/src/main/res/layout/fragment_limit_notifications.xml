@@ -1,0 +1,196 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/progress_bar"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@android:color/white">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_horizontal_margin">
+
+                    <TextView
+                        android:id="@+id/morning_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/morning"
+                        style="@style/TextAppearance.AppCompat.Large"
+                        android:fontFamily="sans-serif-light"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:id="@+id/morning_counter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/TextAppearance.AppCompat.Headline"
+                        android:textColor="@color/primary_dark"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/morning_text"
+                        android:layout_toEndOf="@+id/morning_text"
+                        android:layout_marginLeft="@dimen/narrow_space"
+                        android:layout_marginStart="@dimen/narrow_space"/>
+
+                    <TextView
+                        android:id="@+id/morning_hours"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/narrow_space"
+                        android:text="@string/morning_hours"
+                        style="@style/TextAppearance.AppCompat.Medium"
+                        android:layout_alignBottom="@+id/morning_text"
+                        android:layout_alignRight="@+id/morning_seekbar"
+                        android:layout_alignEnd="@+id/morning_seekbar" />
+
+                    <SeekBar
+                        android:id="@+id/morning_seekbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/morning_hours"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:max="@integer/max_limit_notifications"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/divider_primary"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_horizontal_margin">
+
+                    <TextView
+                        android:id="@+id/evening_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/evening"
+                        style="@style/TextAppearance.AppCompat.Large"
+                        android:fontFamily="sans-serif-light"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:id="@+id/evening_counter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/TextAppearance.AppCompat.Headline"
+                        android:textColor="@color/primary_dark"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/evening_text"
+                        android:layout_toEndOf="@+id/evening_text"
+                        android:layout_marginLeft="@dimen/narrow_space"
+                        android:layout_marginStart="@dimen/narrow_space"/>
+
+                    <TextView
+                        android:id="@+id/evening_hours"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/narrow_space"
+                        android:text="@string/evening_hours"
+                        style="@style/TextAppearance.AppCompat.Medium"
+                        android:layout_alignBottom="@+id/evening_text"
+                        android:layout_alignRight="@+id/evening_seekbar"
+                        android:layout_alignEnd="@+id/evening_seekbar" />
+
+                    <SeekBar
+                        android:id="@+id/evening_seekbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/evening_hours"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:max="@integer/max_limit_notifications"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/divider_primary"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_horizontal_margin">
+
+                    <TextView
+                        android:id="@+id/night_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/night"
+                        style="@style/TextAppearance.AppCompat.Large"
+                        android:fontFamily="sans-serif-light"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:id="@+id/night_counter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/TextAppearance.AppCompat.Headline"
+                        android:textColor="@color/primary_dark"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/night_text"
+                        android:layout_toEndOf="@+id/night_text"
+                        android:layout_marginLeft="@dimen/narrow_space"
+                        android:layout_marginStart="@dimen/narrow_space"/>
+
+                    <TextView
+                        android:id="@+id/night_hours"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/narrow_space"
+                        android:text="@string/night_hours"
+                        style="@style/TextAppearance.AppCompat.Medium"
+                        android:layout_alignBottom="@+id/night_text"
+                        android:layout_alignRight="@+id/night_seekbar"
+                        android:layout_alignEnd="@+id/night_seekbar" />
+
+                    <SeekBar
+                        android:id="@+id/night_seekbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/night_hours"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:max="@integer/max_limit_notifications"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/divider_primary"/>
+
+            </LinearLayout>
+
+        <Button
+            android:id="@+id/save_limits_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:text="@string/save"
+            style="@style/Widget.AppCompat.Button.Colored" />
+
+    </LinearLayout>
+
+</ScrollView>
